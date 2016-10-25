@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<style>
+    h1 {
+        color: white;
+        font-size: 32;
+        }
+    p {
+    color: gold;
+    font-size: 20;}
+    body {
+    background-image: url("http://www.wallpapers4u.org/wp-content/uploads/background_wood_texture_nails_form_36215_1920x1080.jpg");
+    background-repeat: no-repeat;
+    }
+</style>
+<div class='col-sm-6 col-sm-offset-3'>
+<h1>Create Post</h1>
+
+<form method='POST' action='' enctype='multipart/form-data'>{% csrf_token %}
+{{ form.as_p }}
+<input type='submit' class='btn btn-secondary' value='Create Post' />
+</form>
+    <div>
+        <center><button class='btn btn-primary' href="/post">Home</button></center>
+    </div>
+</div>
+{% endblock content %}
