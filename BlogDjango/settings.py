@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7+xbyw0j^a^dsxsbqholr%2z*7_=pq0wr-9lzqwm2plhb$dglv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bloggernation.herokuapp.com']
 
 try:
     from .local_settings import *
